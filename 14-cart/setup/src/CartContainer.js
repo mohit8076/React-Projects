@@ -17,17 +17,17 @@ const CartContainer = () => {
   }
   return (
     <section className='cart'>
-      
+      {/* cart header */}
       <header>
         <h2>your bag</h2>
       </header>
-      
+      {/* cart items */}
       <div>
         {cart.map((item) => {
           return <CartItem key={item.id} {...item} />
         })}
       </div>
-      
+      {/* cart footer */}
       <footer>
         <hr />
         <div className='cart-total'>
